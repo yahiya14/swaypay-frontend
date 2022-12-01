@@ -1,8 +1,9 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const ticketApi = createApi({
+    //ec2-174-129-96-192.compute-1.amazonaws.com
     reducerPath: 'ticketApi',
-    baseQuery: fetchBaseQuery({baseUrl: 'https://localhost:3300/dev/api/ticket/'}),
+    baseQuery: fetchBaseQuery({baseUrl: 'http://ec2-174-129-96-192.compute-1.amazonaws.com:3300/dev/api/ticket/'}),
     endpoints: (builder) => ({
         getTestApi: builder.query({
             query: () => 'test'
